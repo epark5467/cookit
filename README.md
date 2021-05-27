@@ -1,6 +1,10 @@
 # Cookit!
 
-A simple react app create with [Create React App](https://github.com/facebook/create-react-app) and [Spoonacular Recipe and Food API](https://spoonacular.com/api/docs/recipes-api)
+A simple react app created with [Create React App](https://github.com/facebook/create-react-app) and [Spoonacular Recipe and Food API](https://spoonacular.com/api/docs/recipes-api)
+
+Features:
+- Search recipe based on recipe name, meal type, ingredients, intolerances, etc.
+- Get recipe summary, instructions and required ingredients
 
 [DEMO](https://epark5467.github.io/cookit/index.html)
 
