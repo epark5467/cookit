@@ -12,7 +12,7 @@ import MealTypes from './MealType';
 import Intolerances from './Intolerances';
 import Diets from './Diets';
 import RecipeItem from './RecipeItem';
-import { yellow } from '@material-ui/core/colors';
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 
 
 
@@ -92,7 +92,7 @@ export default function Home () {
         let params = {
             ranking: '2',
             number: '10',
-            offset: '0',
+            offset: offset,
             addRecipeInformation: 'false'
         };
 
@@ -146,7 +146,6 @@ export default function Home () {
         
         axios.request(options).then(function (response) {
             setSearchResults(response.data.results);
-            setOffset(response.data.offset);
             setTotalResults(response.data.totalResults);
         }).catch(function (error) {
             console.error(error);
@@ -162,7 +161,16 @@ export default function Home () {
         setOpenDialog(false);
     };
 
+    const handleClickLeftArrow = () => {
+        setOffset(offset - 10);
+        searchRecipes();
+    };
     
+    const handleClickRightArrow = () => {
+        setOffset(offset + 10);
+        searchRecipes();
+        console.log(offset);
+    };
 
     return (
         
@@ -278,7 +286,27 @@ export default function Home () {
                 </Grid>    
                 <GridList cellHeight={180} className={classes.displayResults}>
                     <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-                    <ListSubheader component="div">Found {totalResults} recipes </ListSubheader>
+                    <ListSubheader className={classes.listSubheader} component="div">
+                        Found {totalResults} recipes 
+                        {totalResults > 10 && offset < 1 &&
+                        <span className={classes.listNav}>
+                            <IconButton disabled><MdKeyboardArrowLeft /></IconButton>
+                            <IconButton onClick={handleClickRightArrow}><MdKeyboardArrowRight /></IconButton>
+                        </span>
+                        }
+                        {totalResults > 10 && offset > 9 &&
+                        <span className={classes.listNav}>
+                            <IconButton onClick={handleClickLeftArrow}><MdKeyboardArrowLeft /></IconButton>
+                            <IconButton onClick={handleClickRightArrow}><MdKeyboardArrowRight /></IconButton>
+                        </span>
+                        }
+                        {totalResults > 10 && offset+10 > totalResults && 
+                        <span className={classes.listNav}>
+                            <IconButton onClick={handleClickLeftArrow}><MdKeyboardArrowLeft /></IconButton>
+                            <IconButton disabled ><MdKeyboardArrowRight /></IconButton>
+                        </span>
+                        }
+                    </ListSubheader>
                     </GridListTile>
                     {searchResults.map((tile) => (
                         
