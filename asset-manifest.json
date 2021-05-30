@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/cookit/static/css/main.219c9b6d.chunk.css",
-    "main.js": "/cookit/static/js/main.f6fcabd1.chunk.js",
-    "main.js.map": "/cookit/static/js/main.f6fcabd1.chunk.js.map",
-    "runtime-main.js": "/cookit/static/js/runtime-main.66eca22b.js",
-    "runtime-main.js.map": "/cookit/static/js/runtime-main.66eca22b.js.map",
-    "static/js/2.a30d85bc.chunk.js": "/cookit/static/js/2.a30d85bc.chunk.js",
-    "static/js/2.a30d85bc.chunk.js.map": "/cookit/static/js/2.a30d85bc.chunk.js.map",
-    "static/js/3.96170a1e.chunk.js": "/cookit/static/js/3.96170a1e.chunk.js",
-    "static/js/3.96170a1e.chunk.js.map": "/cookit/static/js/3.96170a1e.chunk.js.map",
+    "main.js": "/cookit/static/js/main.fd04786e.chunk.js",
+    "main.js.map": "/cookit/static/js/main.fd04786e.chunk.js.map",
+    "runtime-main.js": "/cookit/static/js/runtime-main.fc5a1c13.js",
+    "runtime-main.js.map": "/cookit/static/js/runtime-main.fc5a1c13.js.map",
+    "static/js/2.5ba511aa.chunk.js": "/cookit/static/js/2.5ba511aa.chunk.js",
+    "static/js/2.5ba511aa.chunk.js.map": "/cookit/static/js/2.5ba511aa.chunk.js.map",
+    "static/js/3.dcdcab86.chunk.js": "/cookit/static/js/3.dcdcab86.chunk.js",
+    "static/js/3.dcdcab86.chunk.js.map": "/cookit/static/js/3.dcdcab86.chunk.js.map",
     "index.html": "/cookit/index.html",
     "static/css/main.219c9b6d.chunk.css.map": "/cookit/static/css/main.219c9b6d.chunk.css.map",
-    "static/js/2.a30d85bc.chunk.js.LICENSE.txt": "/cookit/static/js/2.a30d85bc.chunk.js.LICENSE.txt"
+    "static/js/2.5ba511aa.chunk.js.LICENSE.txt": "/cookit/static/js/2.5ba511aa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.66eca22b.js",
-    "static/js/2.a30d85bc.chunk.js",
+    "static/js/runtime-main.fc5a1c13.js",
+    "static/js/2.5ba511aa.chunk.js",
     "static/css/main.219c9b6d.chunk.css",
-    "static/js/main.f6fcabd1.chunk.js"
+    "static/js/main.fd04786e.chunk.js"
   ]
 }
